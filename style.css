@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+body {
+    background-color: #fff;
+    font-family: Nunito, sans-serif;
+}
+header figure {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 45px;
+    margin-right: .5rem;
+}
+header {
+    color: #fff;
+    display: flex;
+    padding: 2.25rem 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 3px gray;
+    color: #242424;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+    max-width: 30vw;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: 900;
+}
+header li {
+    width: 30%;
+    text-align: center;
+    padding: .5rem 0;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color .3s ease;
+}
+header li:hover {
+    background-color: #24242412;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+}
+main h1 {
+    font-size: 2rem;
+}
+main section {
+    width: 35vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.teste img {
+    margin: 0 .2rem;
+    cursor: pointer;
+}
+main button {
+    width: 25rem;
+    padding: 1rem 0;
+    background-color: #FCA60F;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: letter-spacing .1s ease;
+}
+main button:hover {
+    letter-spacing: 1px;
+}
+main button:active {
+    color: #242424;
+}
+@media (max-width: 750px) {
+    header figure {
+        padding: 1rem 0;
+    }
+    header {
+        padding: 0;
+    }
+    header ul {
+     max-width: none;
+    }
+    main section {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    main h1, main button {
+        font-size: 1.2em;
+    }
+    .coffee img {
+        display: none;
+    }
+    main button {
+        width: 80%;
+        padding: .8rem 0;
+    }
+    .teste {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
